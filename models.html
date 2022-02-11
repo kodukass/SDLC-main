@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>SDLC Models</title>
+</head>
+<body>
+    <h2>Accordion</h2>
+
+<button class="accordion">millal loodi</button>
+<div class="panel">
+  <p>Waterfall: 1970. Prototyping: mid 1970. Iterative: 1960. Spiral: 1987. Agile: 2001. V-Shape: 1960</p>
+  <img src="images/stella be like.PNG" alt="">
+</div>
+
+<button class="accordion">põhimõtte</button>
+<div class="panel">
+  <p>Waterfall: In this approach, the whole process of the software development is divided into various phases of SDLC. In this SDLC model, the outcome of one phase acts as the input for the next phase. Incremental model: It is essentially a series of waterfall cycles. In this method, every cycle acts as the maintenance phase for the previous software release. Modification to the incremental model allows development cycles to overlap. After that subsequent cycle may begin before the previous cycle is complete.
+V-Model: In this type of SDLC model testing and the development, the phase is planned in parallel. There are verification phases of sdlc on the side and the validation phase on the other side. Agile: In the Agile method, the entire project is divided into small incremental builds. All of these builds are provided in iterations, and each iteration lasts from one to three weeks.
+ Spiral: This SDLC model helps the team to adopt elements of one or more process models like a waterfall, incremental, waterfall, etc.
+ This model adopts the best features of the prototyping model and the waterfall model. Prototyping: method in which a prototype is built, tested and then reworked as necessary until an acceptable outcome is achieved from which the complete system or product can be developed.
+ </p>
+</div>
+
+<button class="accordion">kus saab kasutada</button>
+<div class="panel">
+  <p>1. Making a web application; 2. Helps to lower the complexity of developing a system from scratch; 3. Helps to transform the idea of a project into a functional and completely operational structure; 4. Helps with process development, change management, user experience, and policies; 5. It allows for planning ahead of time, determining costs and staffing decisions, defining goals, measuring performance, and validating points at each phase of the cycle to boost the quality of the final product; 6. Making a complex medical software.</p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
