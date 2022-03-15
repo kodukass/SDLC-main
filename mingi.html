@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Programmeerimise süsteemid<img src="images/stella be like.PNG" alt="" width="20px"></h2>
+    
+<button class="accordion">Käitumisel põhinev arendus </button>
+<div class="panel">
+  <p>(ingl. behavior-driven development, lühendatult BDD) on tarkvaraarenduse meetod, mis on välja arenenud testimisel põhinevast arendusest. Käitumisel põhinev arendus kombineerib testimisel põhineva arenduse üldiseid tehnikaid ja põhimõtted. Selle eesmärk on pakkuda arendustiimile ja juhtivtiimile jagatud tööriista tarkvara arendamisel.
+    Struktuur
+    Pealkiri: Omadus peaks olema selge ja kõigile arusaadav.
+    Sündmustik
+    Lühike, sissejuhatav osa.
+    Kes on loo põhitegelane (klient, kasutaja, administraator jne)?
+    Mida ta tahab teha?
+    Miks ta seda teha tahab?
+    Stsenaarium
+    Kirjeldus stsenaariumist.
+    Vajaliku konditsiooni spetsifikatsioon stsenaariumi alguses.
+    Stsenaariumi algatav tegevus.
+    Oodatav tulemus.
+     
+    Näiteks
+    Omadus: Tagastatud kaubad lähevad lattu
+     
+    Mina poe omanikuna
+    Tahan hoida laol toimuval silma peal  
+    Selleks tuleb tagastatud tooted lisada lattu.
+     
+    Stsenaarium: Tagasimakstud tooted peaksid olema laos
+    Antud klient ostis kampsuni
+    Ja lattu jäi 10 kampsunit
+    Kui üks klient tagastab kampsuni
+    Siis laos peaks olema 11 kampsunit
+     
+    Stsenaarium: Väljavahetatud tooted peaks olema laos
+    Antud klient ostis enne lühikesed püksid
+    Ja nüüd on kolm paari lühikesi pükse laos
+    Ja nüüd on neli paari pikki pükse laos
+    Kui klient tahab lühikesed püksid pikkade vastu vahetada
+    Siis nüüd peaks olema neli paari lühikesi pükse laos
+    Ja kolm paari pikki pükse
+    </p>
+  
+</div>
+
+<button class="accordion">Disainipõhine arendus</button>
+<div class="panel">
+  <p>Disainipõhine arendus kasutab disaini osana õppimisest ja nõuete paremaks määratlemiseks, et luua paremaid ja teadlikumaid tehnoloogilisi lahendusi. Seda võib vaadelda ka kui protsessi, mille käigus disain ja kasutajakogemus juhivad toote või tarkvararakenduse arendamist. See viib toodeteni, mida inimestele meeldib kasutada ja millest nad tahavad teistele rääkida.
+     
+    Domain-driven design Domeenipõhine disain (DDD) on tarkvara kujundamise lähenemisviis, mis keskendub tarkvara modelleerimisele, et sobitada domeeni vastavalt selle domeeni ekspertide sisendile.
+     
+    Objektorienteeritud programmeerimisel tähendab see seda, et tarkvarakoodi struktuur ja keel (klassinimed, klassimeetodid, klassimuutujad) peavad vastama valdkonnale. Näiteks kui tarkvara töötleb laenutaotlusi, võivad sellel olla sellised klassid nagu LoanApplication ja Customer ning sellised meetodid nagu AcceptOffer ja Draw.
+     
+    DDD ühendab juurutamise areneva mudeliga.
+     
+    Domeenipõhine disain põhineb järgmistel eesmärkidel.
+     
+    projekti põhifookuse asetamine põhidomeenile ja domeeniloogikale;
+    keerukate kujunduste rajamine domeeni mudelile;
+    loova koostöö algatamine tehniliste ja domeeniekspertide vahel, et iteratiivselt viimistleda kontseptuaalset mudelit, mis käsitleb konkreetseid domeeniprobleeme.
+    Domeenipõhise disaini kriitika väidab, et arendajad peavad tavaliselt rakendama suurt isolatsiooni ja kapseldamist, et säilitada mudel puhta ja kasuliku konstruktsioonina. Kuigi domeenipõhine disain pakub selliseid eeliseid nagu hooldatavus, soovitab Microsoft seda ainult keeruliste domeenide jaoks, kus mudel pakub selgeid eeliseid domeeni ühise arusaama kujundamisel.
+     
+    Selle termini võttis kasutusele Eric Evans oma 2003. aastal ilmunud samanimelises raamatus.
+    </p>
+</div>
+
+<button class="accordion">Secure by design</button>
+<div class="panel">
+  <p>Secure by design tähendab, et tarkvaratooted ja võimalused on loodud põhimõtteliselt turvaliseks.
+ 
+    Alternatiivseid turbestrateegiaid, taktikaid ja mustreid arvestatakse tarkvara kavandamise alguses ning parimad valib välja ja jõustab arhitektuur ning neid kasutatakse arendajatele juhtpõhimõtetena. Samuti soovitatakse kasutada strateegilisi disainimustreid, millel on turvalisusele kasulik mõju, kuigi need kujundusmustrid ei ole algselt välja töötatud turvalisust silmas pidades.
+     
+    Secure by Design on muutumas üha enam peamiseks arendusmeetodiks tarkvarasüsteemide turvalisuse ja privaatsuse tagamiseks. Selle lähenemisviisi puhul arvestatakse turvalisust ja see on süsteemi sisse ehitatud igas kihis ning see algab tugevast arhitektuurilisest disainist. Turvaarhitektuurse disainilahenduse otsused põhinevad tuntud turvastrateegiatel, taktikatel ja mustritel, mis on määratletud kui korduvkasutatavad tehnikad konkreetsete kvaliteediprobleemide saavutamiseks. Turvataktika/-mustrid pakuvad lahendusi vajaliku autentimise, autoriseerimise, konfidentsiaalsuse, andmete terviklikkuse, privaatsuse, vastutuse, kättesaadavuse, ohutuse ja tagasilükkamise nõuete jõustamiseks isegi siis, kui süsteem on rünnaku all. Tarkvarasüsteemi turvalisuse tagamiseks pole oluline mitte ainult kavandatud robustne turbearhitektuur, vaid ka tarkvaraarenduse uuendatud turbestrateegiate, -taktikate ja -mustrite kaardistamine, et säilitada turvalisuse püsivus.
+    </p>
+</div>
+
+<button class="accordion">Testimisel põhinev arendus</button>
+<div class="panel">
+  <p>Testimisel põhinev arendus (inglise keeles test-driven development, lühend TDD) on tarkvaraarenduse meetod, kus testid kirjutatakse enne tarkvara ennast. Arendusprotsess koosneb lühikestest iteratsioonidest, kus esmalt kirjutatakse ebaõnnestuv test ning seejärel minimaalne kood, et see test läbi läheks. Selline arendus tagab olukorra, kus kogu kood on alati testitud. Sellisel viisil kirjutatud koodi on kergem refaktoreerida ning testid aitavad ka programmi eeldatavat käitumist dokumenteerida. Testimisel põhinevat arendust rakendatakse ka olemasoleva koodi täiustamisel ja silumisel.
+    Testimisel põhineva arenduse loojaks või taasavastajaks peetakse USA tarkvaraarendajat Kent Becki. Ta väidab, et testimisel põhinev arendus aitab luua lihtsa disainiga tarkvara ja tõstab selle usaldusväärsust. Testimisel põhinev arendus on muutunud populaarsemaks ning selle vastu tuntakse üha enam huvi ka suurtes ettevõtetes.
+    </p>
+</div>
+
+<button class="accordion">Acceptance test-driven developmen</button>
+<div class="panel">
+  <p>Acceptance test-driven development (ATDD) on arendusmetoodika, mis põhineb äriklientide, arendajate ja testijate vahelisel suhtlusel. ATDD hõlmab paljusid samu tavasid nagu spetsifikatsioon näite järgi (SBE), käitumispõhise arenduse (BDD), näitepõhise arenduse (EDD) ja tugipõhise arenduse, mida nimetatakse ka loo testipõhiseks arendamiseks (SDD). Kõik need protsessid aitavad arendajatel ja testijatel enne juurutamist mõista kliendi vajadusi ja võimaldavad klientidel vestelda oma domeenikeeles.
+ 
+    ATDD on tihedalt seotud testipõhise arendusega (TDD). See erineb selle poolest, et rõhuasetus on arendaja, testija ja ärikliendi koostööl. ATDD hõlmab aktsepteerimistesti, kuid tõstab esile vastuvõtutestide kirjutamise enne, kui arendajad hakkavad kodeerima.
+    </p>
+</div>
+
+<button class="accordion">Continuous test-driven development</button>
+<div class="panel">
+  <p>Continuous test-driven development (CTDD) on tarkvaraarenduspraktika, mis laiendab testipõhist arendust (TDD) taustal automaatse testimise abil, mida mõnikord nimetatakse ka pidevaks testimiseks. 
+    CTDD-s kirjutab arendaja esmalt testi, kuid pole sunnitud teste käsitsi täitma. Teste käivitab automaatselt taustal töötav pidev testimistööriist. See tehnika võib potentsiaalselt vähendada käsitsi testimisest tulenevat ajaraiskamist, kuna arendaja ei pea testi pärast tavapärase TDD-praktika iga etappi alustama: pärast (esialgu ebaõnnestunud) testi kirjutamist, pärast minimaalse koguse koodi loomist testi läbimiseks ja pärast koodi ümbertöötamiseks.
+    </p>
+</div>
+
+<button class="accordion">Specification by example</button>
+<div class="panel">
+  <p>Specification by example (SBE) on koostööpõhine lähenemine tarkvaratoodete nõuete ja ärile suunatud funktsionaalsete testide määratlemiseks, mis põhineb nõuete hõivamisel ja illustreerimisel, kasutades abstraktsete väidete asemel realistlikke näiteid. Seda rakendatakse agiilsete tarkvaraarendusmeetodite, eriti käitumispõhise arenduse kontekstis. See lähenemisviis on eriti edukas nõuete ja funktsionaalsete testide haldamisel suuremahulistes, olulise domeeni ja organisatsioonilise keerukusega projektide puhul.
+ 
+    Näitepõhise spetsifikatsiooni nimetatakse ka näitepõhiseks arenduseks, käivitatavateks nõueteks, vastuvõtutestipõhiseks arenduseks (ATDD või A-TDD), paindlikuks vastuvõtutestimiseks, testipõhisteks nõueteks (TDR).
+    </p>
+</div>
+
+<button class="accordion">Data-driven development</button>
+<div class="panel">
+  <p>Data-driven development on programmeerimisparadigma, milles programmilaused kirjeldavad sobitatavaid andmeid ja vajalikku töötlemist, mitte ei määratle astutavate sammude jada. Andmepõhiste keelte standardnäited on tekstitöötluskeeled sed ja AWK, kus andmeteks on ridade jada sisendvoos – neid nimetatakse seega ka reale orienteeritud keelteks – mustrite sobitamine toimub peamiselt regulaaravaldiste kaudu või rea numbrite kaudu.
+</p>
+</div>
+
+<button class="accordion">Data-oriented design</button>
+<div class="panel">
+  <p>Data-oriented design on programmide optimeerimise lähenemisviis, mis on motiveeritud CPU vahemälu tõhusast kasutamisest, mida kasutatakse videomängude arendamisel. Lähenemisviis on keskenduda andmete paigutusele, eraldada ja sorteerida väljad vastavalt vajadusele ning mõelda andmete teisendustele.
+ 
+    Paralleelne massiiv (või massiivide struktuur) on andmetele orienteeritud disaini peamine näide. See vastandub objektorienteeritud disainidele tüüpiliste struktuuride massiiviga.
+    </p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
