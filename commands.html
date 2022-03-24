@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+</style>
+</head>
+<body>
+
+    <h2>Git and GitHub</h2>
+
+    <p>Git and Github are not the same thing. Git manages source code history and is a local file, that you have to install in your computer. Github is a hosting repository and web based. You use Git to code in local file and then push it to a web browser.</p>
+    
+    <p>There are three main concepts in Git:</p>
+    
+    <ul>
+        <li><span>Repository:</span> location, where the code history is stored.</li>
+        <li><span>Branch:</span> “folder” in the repository containing commits.</li>
+        <li><span>Commit:</span> different stages of code inside a branch.</li>
+    </ul>
+
+<button class="accordion">Git Commands</button>
+<div class="panel">
+  <p></p>
+  <img style="width: 400px;"src="../images/commands1.png" alt="commands1"><img style="width: 500px;"src="../images/commands2.png" alt="commands2"><img style="width: 400px;"src="../images/commands3.png" alt="commands3">
+</div>
+
+<button class="accordion">Section 2</button>
+<div class="panel">
+  <p></p>
+  <img style="width: 400px;"src="../images/commands4.png" alt="commands4">
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
