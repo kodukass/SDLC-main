@@ -51,48 +51,81 @@ span{
 
 <button class="accordion">Use case diagrams</button>
 <div class="panel">
-    <p>Use case diagrams in UML are used during the requirements phase of software development – they usually put the system requirements into a diagram format, and it’s easy to see what actions a system must support at a glance. Of course, there will be many use cases for your system, and therefore you will usually need to draw many use case diagrams!</p>
+    <p><span>Use case diagrams</span> in UML are used during the requirements phase of software development – they usually put the system requirements into a diagram format, and it’s easy to see what actions a system must support at a glance. Of course, there will be many use cases for your system, and therefore you will usually need to draw many use case diagrams!</p>
     <p>Along with other UML diagrams, such as activity, sequence and component diagrams, use case diagrams help you to visualize your software and requirements, before jumping in and starting to program.</p>
     <img src="../images/UseCase-HabitTrackingApp.png" alt="Use Case Diagram">
 </div>
 
-<button class="accordion">Section 2</button>
+<button class="accordion">Class diagrams</button>
 <div class="panel">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    
-    
+    <p>The Unified Modeling Language or UML notation is probably the most well known and regularly used visual representation of programs that you’ll find in software development. There are a wide range of diagrams to help you specify your data and processes before you start programming. They help you clarify requirements and limitations, speed up the implementation, provide a guide for thorough testing, and prevent bugs from sneaking in throughout the entire software development process.</p>
+    <p><span>Classes:</span> Each class is represented by a box with three sections stacked on top of each other with the following formatting. Only the class name is mandatory</p>
+    <ul>
+        <li>Class name</li>
+        <li>Attributes – name: type</li>
+        <li>Operations – method name(parameter list): return value type</li>
+    </ul>
+    <p><span>Associations:</span> When a link exists between classes you can indicate it in a number of ways.</p>
+    <ul>
+        <li><span>Bi-directional:</span> Both classes know about the association – draw a solid line between the classes, with no arrows.</li>
+        <li><span>One way:</span> Only one class knows about the other – use an open arrow head. For example: a FailedStudentsList will know about the Student class, but the Student class is not aware of the FailedStudentsList class.</li>
+        <li><span>Dependency:</span> When changes in one class cause changes in another class, they are dependent. Use a dashed line to show dependency.</li>
+        <li><span>Aggregation:</span> When one class contains several instances of another class, but those instances still exist even if the container class is deleted, then that’s aggregation. Use a hollow diamond to indicate the container class.</li>
+        <li><span>Composition:</span> This is similar to aggregation, but when the container class is deleted, the instances of the other classes are also deleted. The container class is ‘composed’ of instances of the other class. Use a solid diamond to indicate the container class.</li>
+        <li><span>Multiplicity:</span> Where you indicate how many of each class is related to the other class. This can be zero or more (0..*), one-to-one (1..1), or 1 to a specific number (1..5).</li>
+    </ul>
+    <img src="../images/Class-Diagram-Habit-Tracker-app-800x592.png" alt="Class Diagram">
 </div>
 
-<button class="accordion">Section 3</button>
+<button class="accordion">Sequence diagrams</button>
 <div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p><span>UML sequence diagrams</span> are the first highly detailed behavioural diagrams that you will create when using UML for software development. They aren’t so often used in business process modelling, especially because they refer to the actual data and operation names that will be used when programming. That doesn’t mean you can’t use sequence diagrams: they can be used to model business objects and their interactions in detail, or by IT staff to detail how the elements in their infrastructure communicate and work together.</p>
+    <p>Sequence diagrams take the classes with their data and operations, plus the general behavior modeled in the activity diagrams, and show how it all fits together. Apart from parts of the actual interface, you could write your program from the combination of the class and sequence diagrams!</p>
+    <img src="../images/drawioUMLsequenceDiagram-checkin.png" alt="Sequence Diagram">
 </div>
 
-<button class="accordion">Section 4</button>
+<button class="accordion">Activity diagrams</button>
 <div class="panel">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    
-    
+    <p>Like use case diagrams, activity diagrams model the behaviour of users and systems as they follow a process. They are a type of flow chart or workflow, but they use slightly different shapes.</p>
+    <ul>
+        <li><span>Start/End:</span> Use a black or solid circle to show where the diagram starts, and a solid circle with a ring around it to indicate the end of the process.</li>
+        <li><span>Actions:</span> Use rounded rectangles with the name of the action.</li>
+        <li><span>Decisions:</span> Use diamonds whenever there is a choice. You can either include the decision as a question within the diamond, or indicate the decision outcome on the outgoing arrows instead of simply using yes/no labels.</li>
+        <li><span>Split/Join:</span> Use a thick bar to indicate where activities split or join.</li>
+    </ul>
+    <img src="../images/ActivityDiagram-HabitTrackerApp.png" alt="Activity diagram">
 </div>
 
-<button class="accordion">Section 5</button>
+<button class="accordion">State diagrams</button>
 <div class="panel">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    
-    
+    <p><span>State diagrams</span> diagrams have been used in programming to describe the various possible states that a system can be in for decades. They also quickly show which states lead to each other, and what triggers a change of state.</p>
+    <p>The biggest difference between state diagrams and activity or interaction overview diagrams is that state diagrams do not (necessarily) show the sequence. They just show what states are possible and their entry and exit points, not when those states are entered.</p>
+    <p><span>Components of  UML state diagram</span></p>
+    <ul>
+        <li><span>Start state:</span> A solid circle.</li>
+        <li><span>End state:</span> A solid circle with a ring around it.</li>
+        <li><span>State:</span> A rectangle with rounded corners, with the name of the action.</li>
+        <li><span>Transition:</span> Connector arrows with a label to indicate the trigger for that transition, if there is one.</li>
+        <li><span>State with internal activities:</span> A state with a horizontal line, and the actions listed in the bottom half.</li>
+        <li><span>Composite state:</span> A state with a horizontal line, and a nested state diagram (or link to another draw.io page) in the bottom half.</li>
+        <li><span>Guards or conditions:</span> A diamond.</li>
+        <li><span>Fork:</span> A thicker line with one transition incoming and two or more outgoing.</li>
+        <li><span>Join:</span> A thicker line with more than one transition incoming and only one outgoing.</li>
+    </ul>
+    <img src="../images/UML-state-diagram-Habit-Tracker-example.png" alt="State Diagram">
 </div>
 
-<button class="accordion">Section 6</button>
+<button class="accordion">Interaction overview diagrams</button>
 <div class="panel">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    
-    
+    <p>These UML diagrams are a combination of an activity diagram and sequence diagrams. Each individual activity or interaction is placed in its own frame, making it easier to see the different paths that need to be programmed when there are complex if-then-else decisions. Decisions are outside of the frames to show the flow of control between the various interactions.</p>
+    <p>The interactions themselves, inside the frames, are very similar to sequence diagrams. Between the interactions you will have decisions (diamonds) and fork and join nodes (solid horizontal rectangles), and connectors to show the flow of control. There are also initial and final nodes to show the start and end of the overarching interaction.</p>
+    <img src="../images/Interaction-Overview-Habit-Tracker.png" alt="Interaction overview diagram">
 </div>
 
 <button class="accordion">Bitcoin Calculator App Activity Diagram</button>
 <div class="panel">
     <p><a href="https://github.com/kodukass/bitcoincalculatorapp" target="_blank">My Bitcoin Calculator</a></p>
-    <img src="" alt="">
+    <img style="width: 700px;"src="../images/bitcoin.png" alt="BitCoin Diagram">
 </div>
 
 <footer style="text-align: center;margin-top: 5rem;">
